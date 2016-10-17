@@ -7,7 +7,7 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"github.com/wemanity-belgium/hyperclair/xerrors"
+	"github.com/jharshman/hyperclair/xerrors"
 )
 
 const versionTplt = `

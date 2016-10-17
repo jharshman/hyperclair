@@ -2,8 +2,7 @@
 
 # hyperclair
 
-[![Build Status](https://travis-ci.org/wemanity-belgium/hyperclair.svg?branch=develop)](https://travis-ci.org/wemanity-belgium/hyperclair) [![Join the chat at https://gitter.im/wemanity-belgium/hyperclair](https://badges.gitter.im/wemanity-belgium/hyperclair.svg)](https://gitter.im/wemanity-belgium/hyperclair?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
+[![Build Status](https://travis-ci.org/jharshman/hyperclair.svg?branch=master)](https://travis-ci.org/jharshman/hyperclair)
 > Tracking container vulnerabilities, that's should be *Hyperclair*
 
 Tracking vulnerabilities in your container images, it's easy with CoreOS Clair.
@@ -85,10 +84,6 @@ clair:
     path: ./reports
     format: html
 ```
-
-# Remarks
-
-1. Analyzing Official Docker image is disallowed. You cannot pull layers from image you don't own.
 
 # Contribution and Test
 

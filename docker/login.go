@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/wemanity-belgium/hyperclair/docker/httpclient"
-	"github.com/wemanity-belgium/hyperclair/xerrors"
+	"github.com/jharshman/hyperclair/docker/httpclient"
+	"github.com/jharshman/hyperclair/xerrors"
 )
 
 //Pull Image from Registry or Hub depending on image name
