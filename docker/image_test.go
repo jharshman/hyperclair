@@ -3,7 +3,7 @@ package docker
 import (
 	"testing"
 
-	"github.com/wemanity-belgium/hyperclair/xerrors"
+	"github.com/jharshman/hyperclair/xerrors"
 )
 
 var imageNameTests = []struct {

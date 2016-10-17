@@ -19,7 +19,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/wemanity-belgium/hyperclair/config"
+	"github.com/jharshman/hyperclair/config"
 )
 
 var cfgFile string

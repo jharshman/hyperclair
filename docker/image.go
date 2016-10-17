@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/jharshman/hyperclair/xerrors"
 	"github.com/spf13/viper"
-	"github.com/wemanity-belgium/hyperclair/xerrors"
 )
 
 //Image represent Image Manifest from Docker image, including the registry URL
