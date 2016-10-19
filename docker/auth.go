@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/wemanity-belgium/hyperclair/config"
-	"github.com/wemanity-belgium/hyperclair/docker/httpclient"
-	"github.com/wemanity-belgium/hyperclair/xerrors"
+	"github.com/jharshman/hyperclair/config"
+	"github.com/jharshman/hyperclair/docker/httpclient"
+	"github.com/jharshman/hyperclair/xerrors"
 )
 
 type token struct {

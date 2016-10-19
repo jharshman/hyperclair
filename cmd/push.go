@@ -6,10 +6,10 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"github.com/wemanity-belgium/hyperclair/config"
-	"github.com/wemanity-belgium/hyperclair/docker"
-	"github.com/wemanity-belgium/hyperclair/server"
-	"github.com/wemanity-belgium/hyperclair/xerrors"
+	"github.com/jharshman/hyperclair/config"
+	"github.com/jharshman/hyperclair/docker"
+	"github.com/jharshman/hyperclair/server"
+	"github.com/jharshman/hyperclair/xerrors"
 )
 
 var pushCmd = &cobra.Command{
