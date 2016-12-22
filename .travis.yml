@@ -2,17 +2,16 @@ language: go
 go:
 - 1.5
 install:
-- go get -d -v ./...
-- go get github.com/mitchellh/gox
-- gox -os="linux" -arch="amd64" -output out/{{.Dir}}-{{.OS}}-{{.Arch}} -ldflags="-X
-  cmd.Version=$(cat VERSION)"
+  - go get -d -v ./...
+  - go get github.com/mitchellh/gox
+  - gox -os="linux" -arch="amd64" -output out/{{.Dir}}-{{.OS}}-{{.Arch}} -ldflags="-X cmd.Version=$(cat VERSION)"
 deploy:
   provider: releases
   api-key:
     secure: gX3vASt8KuXbg+1XLxVRVmWYqN2+83Y79kFXOOzgrAbTzdjyUMeQO8KtaBCj7Ky9tZff5I0W0GWptkdcZR0GroBsOrxH3UzAaVdeg8r+mwyorYywgrY/J9Y8fI5mxqLqHSpqkVLXYkXViLMPXk2y2x7C5DKYhshw06EVckGGXB7Lj/+9l2GELST4HNFeDn/Hkca9AW501zkCGUUeDw/oEWAoDb04D7WF8mVakqZ1biYFRxHkYPGwbB7n55L1tLJhJB8iOvBNG8guI+JPT1M2B3gobdVxoityrwtUNzvqs4QHpLAmIU6JKbuXTc2AJ0UBtSUjQlNYSXWM2zO0Q2dKo5k01MQ19vgQUlq4NsKIlrY3uaFVKLkjIi84CRpBzZkImzc0DojsGRjD/pFiUZtoUWHm3RDi494r58S7pe2AdUT+EQCu2Q0Y4sFdZeTysOtZYN2nnq2fKvd+6HmxCeWhQRZNAbyCk1RiUUL1YFGjtiTcWqKCC3rdL4zUmVfcYqd9RRxDnSobhrllgwzl+4bFRG7DnytvbfnhXpnnMlI/RHdzGYeQ9jK1JfVCEpcT9u71sp+jlGMc/Jjza/FwZqlsIkoiDnghdrvQUHH4eO/8UBTmu6GW5MZfZ3sXhUrOddmLxuLbSK4leJmX/5s5nre39pgelaNWFoOGEGRL/0vsTG4=
   file:
-  - out/hyperclair-darwin-amd64
-  - out/hyperclair-linux-amd64
+    - out/hyperclair-darwin-amd64
+    - out/hyperclair-linux-amd64
   skip_cleanup: true
   on:
     tags: true
