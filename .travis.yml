@@ -1,12 +1,8 @@
 language: go
 go:
 - 1.5
-before_install:
-  - go get github.com/golang/lint/golint
-  - go get github.com/mitchellh/gox
 install:
-  - make test
-  - make
+  - go get github.com/mitchellh/gox
 deploy:
   provider: releases
   api-key:
